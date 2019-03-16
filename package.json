@@ -1,0 +1,33 @@
+{
+  "name": "18-restart",
+  "version": "1.0.0",
+  "description": "\"Hello, on repart de 0\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:prod": "webpack --mode production --module-bind js=babel-loader",
+    "build:dev": "webpack --mode development",
+    "watch": "webpack --watch --mode development --module-bind js=babel-loader",
+    "start": "webpack-dev-server --open --mode development --inline --module-bind js=babel-loader --content-base dist/ --historyApiFallback"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.9",
+    "@emotion/styled": "^10.0.9",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-router-dom": "^4.3.1"
+  }
+}
